@@ -1,5 +1,5 @@
-## Personal website for Chinese teacher
+Личный сайт преподавателя китайского языка.
 
-Личный сайт для преподавателя китайского языка.
+Chinese teacher personal website.
 
-Приходите учиться: https://alikulova.ru
+https://alikulova.ru
