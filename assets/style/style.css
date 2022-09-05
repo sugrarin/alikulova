@@ -6,10 +6,8 @@
 
 :root {
   --header-color: #F4F4F4;
-  --button-color: #FFFFFF;
+  --button-color: #EC5C2A;
   --grid-button-color: #FFFFFF;
-  --text-button-color: #CDAC89;
-
 }
 
 @font-face { 
@@ -45,7 +43,6 @@ body {
   font-family: "PT Root UI", -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   /* -webkit-font-smoothing: antialiased; */
 }
-
 
 nav .headerMenu {
   display: flex;
@@ -105,18 +102,16 @@ nav .headerMenu {
   font-size: 19px;
   padding: 15px 26px;
   border-radius: 8px;
-  background-color: #CDAC89;
+  background-color: var(--button-color);
   color: #fff;
   text-decoration: none;
   line-height: 120%;
   margin-bottom: 4px;
   display: inline-block;
-   /*box-shadow: 0 0 8px #ebe7d9; */
 }
 
-
 .headerButton:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .headerImage {
@@ -157,40 +152,6 @@ nav .headerMenu {
   }
 }
 
-/*@media (max-width: 1024px) {
-  nav .headerMenu {
-    padding: 20px 4%;
-  }
-
-  .headerText, .headerLead {
-    max-width: 100%;
-  }
-  .headerText {
-    padding: 10px 4%;
-    margin-bottom: 20px;
-  }
-  .headerHeading {
-    font-size: 68px;
-  }
-  .headerLead {
-    font-size: 20px;
-  }
-  .headerImage {
-    margin: 1% 5% 5% 5%;
-  }
-}*/
-
-/*@media (max-width: 520px) {
-  .headerHeading {
-    font-size: 38px;
-  }
-
-  .headerImage {
-    margin: 0;
-  }
-}*/
-
-
 section {
   margin: 36px;
 }
@@ -212,7 +173,10 @@ p {
 @media (max-width: 520px) {
   p {
   font-size: 19px;
-}
+    }
+  .headerHeading {
+    font-size: 34px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -228,17 +192,13 @@ p {
   display: flex;
   align-items: flex-start;
 }
- 
-
-
-
 
 .button {
   font-size: 18px;
   padding: 14px 20px;
   border-radius: 6px;
   color: #ffffff;
-  background-color: var(--text-button-color);
+  background-color: var(--button-color);
   text-decoration: none;
   line-height: 108%;
   margin: 10px 0;
@@ -246,25 +206,22 @@ p {
 }
 
 .button:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
-
 
 .contactsLink {
   margin: 0 6px 10px 0;
-  color: #ffffff;
   font-size: 17px;
-  background-color: var(--text-button-color);
-  text-decoration: none;
-  padding: 8px 10px;
+  background-color: #eeeeee;
+  padding: 10px 14px;
   border-radius: 6px;
+  border: px solid var(--button-color);
   display: inline-block;
 }
 
 .contactsLink:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
-
 
 .x3grid {
   display: grid;
@@ -272,7 +229,6 @@ p {
   gap: 24px;
   margin: 24px 0;
 }
-
 
 .gridItem {
   background-color: var(--header-color);
@@ -300,7 +256,6 @@ p {
   margin: 8px 0;
 }
 
-
 .gridButton {
   color: #010101;
   background-color: var(--grid-button-color);
@@ -315,12 +270,11 @@ p {
 
 .gridButton:hover {
   opacity: 0.8;
-
 }
-
 
 footer {
   margin: 36px;
+  line-height: 150%;
 }
 
 @media (max-width: 1023px) {
